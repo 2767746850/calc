@@ -1,0 +1,47 @@
+<!--pages/calc-v2/calc-v2.wxml-->
+<view class="calc">
+  <view class="content">
+    <text>{{express}}</text>
+    <text>{{result}}</text>
+  </view>
+
+  <view class="btn">
+    <view class="btn-view">
+      <text bindtap="click" data-con="c" class="btn-view-text-color">c</text>
+      <text bindtap="click" data-con="÷" class="btn-view-text-color">÷</text>
+      <text bindtap="click" data-con="×" class="btn-view-text-color">×</text>
+      <text bindtap="click" data-con="←" class="btn-view-text-color">←</text>
+    </view>
+    <view class="btn-view">
+      <text bindtap="click" data-con="7">7</text>
+      <text bindtap="click" data-con="8">8</text>
+      <text bindtap="click" data-con="9">9</text>
+      <text bindtap="click" data-con="-" class="btn-view-text-color">-</text>
+    </view>
+    <view class="btn-view">
+      <text bindtap="click" data-con="4">4</text>
+      <text bindtap="click" data-con="5">5</text>
+      <text bindtap="click" data-con="6">6</text>
+      <text bindtap="click" data-con="+" class="btn-view-text-color">+</text>
+    </view>
+    <view class="bottom">
+      <view class="left">
+        <view class="btn-view-123">
+          <text bindtap="click" data-con="1">1</text>
+          <text bindtap="click" data-con="2">2</text>
+          <text bindtap="click" data-con="3">3</text>
+        </view>
+        <view class="btn-view-123">
+          <text bindtap="click" data-con="%">%</text>
+          <text bindtap="click" data-con="0">0</text>
+          <text bindtap="click" data-con=".">.</text>
+        </view>
+      </view>
+      <view class="right">
+        <view bindtap="result" data-con="="  class="denghao">
+          <text>=</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
